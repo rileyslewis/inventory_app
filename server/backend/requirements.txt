@@ -1,0 +1,8 @@
+fastapi
+typing
+sqlalchemy
+uvicorn
+python_http_client
+pydantic
+future
+alembic

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Information",
+    "path": "/Information",
+    "component": "/app/pages/Information.vue",
+    "chunkName": "pages/Information"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/app/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

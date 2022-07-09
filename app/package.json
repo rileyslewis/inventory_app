@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "bootstrap-vue": "^2.22.0",
+    "boxicons": "^2.1.2",
+    "eslint": "^8.19.0",
+    "nuxt": "^2.12.2",
+    "prettier": "^2.7.1"
+  }
+}
