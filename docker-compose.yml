@@ -6,7 +6,7 @@ services:
     build: ./server
     container_name: fastapi
     ports:
-      - 8080:8080
+      - "8080:8080"
     volumes:
       - ./server/backend/main:/app
     environment:
@@ -23,11 +23,15 @@ services:
       - ./app:/app
     working_dir: /app
     ports:
-      - 3000:3000
+      - "3000:3000"
     environment:
       - HOST=0.0.0.0
     container_name: frontend
     restart: always
-    links:
-      - fastapi
-    
+
+
+  serveo:
+    image: taichunmin/serveo
+    tty: true
+    stdin_open: true
+    command: "ssh -o ServerAliveInterval=60 -R 80:host.docker.internal:8000 -o \"StrictHostKeyChecking no\" serveo.net"

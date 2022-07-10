@@ -3,12 +3,14 @@
     "name": "Information",
     "path": "/Information",
     "component": "/app/pages/Information.vue",
-    "chunkName": "pages/Information"
+    "chunkName": "pages/Information",
+    "_name": "_12e03312"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/app/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2dfb1658"
   }
 ]
