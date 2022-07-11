@@ -7,15 +7,13 @@ services:
     container_name: fastapi
     ports:
       - "8080:8080"
-    volumes:
-      - ./server/backend/main:/app
+    command:  uvicorn backend.main:app --reload --workers 1 --host 0.0.0.0 --port 8080
     environment:
       - DATABASE_URL=sqlite:///./sql_app.db
-    command: uvicorn server.backend.main:app --host 0.0.0.0
     restart: always
     tty: true
     
-
+    
   frontend:
     build: ./app
     command: yarn dev
@@ -28,10 +26,8 @@ services:
       - HOST=0.0.0.0
     container_name: frontend
     restart: always
+    
 
-
-  serveo:
-    image: taichunmin/serveo
-    tty: true
-    stdin_open: true
-    command: "ssh -o ServerAliveInterval=60 -R 80:host.docker.internal:8000 -o \"StrictHostKeyChecking no\" serveo.net"
+networks:
+    default:
+        driver: bridge

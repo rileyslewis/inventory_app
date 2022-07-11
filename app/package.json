@@ -11,8 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/dotenv": "^1.4.1",
-    
     "@nuxtjs/vuetify": "^1.12.3",
     "bootstrap-vue": "^2.22.0",
     "boxicons": "^2.1.2",

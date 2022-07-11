@@ -1,16 +1,10 @@
 export default {
     publicRuntimeConfig: {
-        baseURL: process.env.BASE_URL || 'http://0.0.0.0:8080/'
-      },
-    ngrok: {
+        baseURL: process.env.BASE_URL || 'http://127.0.0.1:8080'
         
-        addr: 3000
-    },
-    
+      },
     buildModules: [
         "@nuxtjs/vuetify",
-        "@nuxtjs/dotenv",
-        
     ],
     modules: [
         "@nuxtjs/axios",
