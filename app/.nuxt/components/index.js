@@ -1,7 +1,7 @@
-export { default as Card } from '../../components/Card.vue'
-export { default as Form } from '../../components/Form.vue'
-export { default as Sidebar } from '../../components/Sidebar.vue'
-export { default as Table } from '../../components/Table.vue'
+export const Card = () => import('../../components/Card.vue' /* webpackChunkName: "components/card" */).then(c => wrapFunctional(c.default || c))
+export const Form = () => import('../../components/Form.vue' /* webpackChunkName: "components/form" */).then(c => wrapFunctional(c.default || c))
+export const Sidebar = () => import('../../components/Sidebar.vue' /* webpackChunkName: "components/sidebar" */).then(c => wrapFunctional(c.default || c))
+export const Table = () => import('../../components/Table.vue' /* webpackChunkName: "components/table" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

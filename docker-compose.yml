@@ -6,8 +6,8 @@ services:
     build: ./server
     container_name: fastapi
     ports:
-      - "8080:8080"
-    command:  uvicorn backend.main:app --reload --workers 1 --host 0.0.0.0 --port 8080
+      - "5000:5000"
+    command:  uvicorn server.backend.main:app --reload --workers 1 --host 0.0.0.0 --port 5000
     environment:
       - DATABASE_URL=sqlite:///./sql_app.db
     restart: always
@@ -16,16 +16,17 @@ services:
     
   frontend:
     build: ./app
-    command: yarn dev
+    command: yarn start
     volumes:
       - ./app:/app
     working_dir: /app
     ports:
-      - "3000:3000"
+      - "8080:8080"
     environment:
       - HOST=0.0.0.0
     container_name: frontend
     restart: always
+    
     
 
 networks:

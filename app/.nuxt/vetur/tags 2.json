@@ -1,0 +1,14 @@
+{
+  "Card": {
+    "description": "Auto imported from components/Card.vue"
+  },
+  "Form": {
+    "description": "Auto imported from components/Form.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/Sidebar.vue"
+  },
+  "Table": {
+    "description": "Auto imported from components/Table.vue"
+  }
+}

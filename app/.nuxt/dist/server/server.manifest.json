@@ -1,0 +1,19 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/card.js": "components/card.js",
+    "components/form.js": "components/form.js",
+    "components/table.js": "components/table.js",
+    "pages/Information.js": "pages/Information.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/card.js": "components/card.js.map",
+    "components/form.js": "components/form.js.map",
+    "components/table.js": "components/table.js.map",
+    "pages/Information.js": "pages/Information.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
